@@ -2,18 +2,18 @@
 Utilities related to data preprocessing.
 It contains the process of preprocessing a large image of imagenet.
 
-#Layered_sampling.py
+# Layered_sampling.py
 - Object
-###Suppose you want to use only a small number of samples when the labeled data is contained in each label folder.
+### Suppose you want to use only a small number of samples when the labeled data is contained in each label folder.
 The easiest way is to load all the data, shuffle it, and load as much data as you want.
 However, this is statistically incorrect data sampling.
 If the luck is bad, some labels may not be included in the sample.
 This function picks up the data evenly according to the number of labels.
 
-#Using
+# Using
 python3 layered_sampling.py [--dataset_dir ] [--output_dir] [--file_name] [options]
 
-#arguments
+# arguments
 parser.add_argument('--dataset_dir', type=str,
                     help='Path to dataset directory.')
 parser.add_argument('--output_dir', type=str,
@@ -31,7 +31,7 @@ parser.add_argument('--seed', type=int, default=13,
 parser.add_argument('--corrupt_check', type=bool, default=False,
                     help='corrupt_check function')
 
-#Additional explanation
+# Additional explanation
 This code converts the JPEG image into a TFrecords file.
 If you modify the features of line 63, you can save it as TFrecords as you like.
 Corrupt Check is used to select Corrupted image in imagenet 2001 version.
