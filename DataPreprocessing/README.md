@@ -14,14 +14,14 @@ This function picks up the data evenly according to the number of labels.
 python3 layered_sampling.py [--dataset_dir ] [--output_dir] [--file_name] [options]
 
 # arguments
---dataset_dir', type=str, 'Path to dataset directory.'
---output_dir', type=str, 'Path to output directory.'
---file_name', type=str, 'File Name'
---example_per_file', type=int, default=10000, 'Number of Example Per Tfrecords files'
---iter_per_log', type=int, default=1000, 'iter per log'
---object_dataset_num', type=int, default=100000,'total number of object datas'
---seed', type=int, default=13,'random_seed'
---corrupt_check', type=bool, default=False,'corrupt_check function'
+- --dataset_dir', type=str, 'Path to dataset directory.'
+- --output_dir', type=str, 'Path to output directory.'
+- --file_name', type=str, 'File Name'
+- --example_per_file', type=int, default=10000, 'Number of Example Per Tfrecords files'
+- --iter_per_log', type=int, default=1000, 'iter per log'
+- --object_dataset_num', type=int, default=100000,'total number of object datas'
+- --seed', type=int, default=13,'random_seed'
+- --corrupt_check', type=bool, default=False,'corrupt_check function'
 
 # Additional explanation
 This code converts the JPEG image into a TFrecords file.
