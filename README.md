@@ -11,5 +11,5 @@ I will continue to add.
 # Function
 - Data Preprocessing
     - Layered_sampling.py
-	### Sampling data hierarchically.
+	Sampling data hierarchically.
 	Modify Image file to Tfrecord according to label distribution.
